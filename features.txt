@@ -1,0 +1,13 @@
+-application is fully configurable
+1- application:
+     configs:
+       booking:
+         intervalMinutes: 15
+defines the minimal block interval of booking (defined in configuration calss as per the example requirements).
+
+2- maintenance table is introduced to dynamically configure maintained slots per each room (data is setup also to accommodate the example requirements).
+
+3- max number of people is dynamically fetched from the maximum room size given if another room added with extra capacity max validation will increase automatically
+(basic setup is done as per the example).
+
+4- rooms are assumed to bookable 24/7 if available and outside maintenance timing.

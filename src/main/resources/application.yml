@@ -1,0 +1,25 @@
+# MS SQL Server properties
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+application:
+  configs:
+    booking:
+      intervalMinutes: 15
+
+
